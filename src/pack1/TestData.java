@@ -13,7 +13,7 @@ public class TestData {
     System.out.println("Step1 Done");
     
     //Step2
-    Connection  con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb","root","abc123");
+    Connection  con = DriverManager.getConnection("jdbc:mysql://localhost:3306/student","root","abc123");
     System.out.println("Step2 Done");
     
     //Step3
@@ -21,7 +21,7 @@ public class TestData {
     System.out.println("Step3 Done");
     
     //Step4
-    int a =st.executeUpdate("insert into mydb_tbl values(102,'Mansi')");
+    int a =st.executeUpdate("insert into details values(102,'Nagpur',17),(102,'Agra',17)");
     System.out.println("Step4 Done");
     if(a>0)
     {
